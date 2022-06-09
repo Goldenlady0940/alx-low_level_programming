@@ -2,7 +2,7 @@
 
 /**
  * print_line - prints a line in the terminal
- * @n: number of the (_) lines to be printed
+ * @n: number of the_ lines to be printed
  */
 
 void print_line(int n)
