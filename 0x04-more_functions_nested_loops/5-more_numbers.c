@@ -12,8 +12,10 @@ void more_numbers(void)
 	{
 		if (i >= 58)
 		{
-			_putchar(i / 10 + '0');
-			_putchar(i % 10 + '0');
+			int j = i / 10 + '0';
+			int k = i % 10 + '0';
+			_putchar(j);
+			_putchar(k);
 		}
 		else
 		{
