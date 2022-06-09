@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-int _putchar(char);
+int _putchar(char c);
 int _isupper(int c);
 int _idigit(int c);
 int mul(int a, int b);
