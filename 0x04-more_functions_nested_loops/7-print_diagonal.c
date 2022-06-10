@@ -9,8 +9,8 @@
 void print_diagonal(int n)
 {
 	char a, b;
-		
-	if (n > 0)
+
+        if (n > 0)
 	{
 		for (a = 1; a <= n; a++)
 		{
