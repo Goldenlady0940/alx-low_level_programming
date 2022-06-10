@@ -2,13 +2,13 @@
 
 /**
  * print_diagonal - diagonal line
- @n: size for the diagonal
+ * @n: size for the diagonal
  * Return: void
  */
 
 void print_diagonal(int n)
 {
-	char a, b;\
+	char a, b;
 		
 	if (n > 0)
 	{
