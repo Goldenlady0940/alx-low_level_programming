@@ -17,6 +17,7 @@ void puts_half(char *str)
 
 	for (i = n; i < len; i++)
 	{
-		puts(str);
+		_putchar(str[i]);
 	}
+	_putchar('\n');
 }
