@@ -16,6 +16,6 @@ void print_rev(char *s)
 	for (i = strlen(s); i >= 0; i--)
 	{
 		str[i] = s[i];
+		puts(str);
 	}
-	puts(str);
 }
