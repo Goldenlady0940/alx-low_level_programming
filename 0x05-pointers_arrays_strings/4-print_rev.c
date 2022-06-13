@@ -9,13 +9,15 @@
 
 void print_rev(char *s)
 {
-	char str[1000];
+	int i, len, temp;
 
-	int i;
+	len = strlen(str);
 
-	for (i = strlen(s); i >= 0; i--)
+	for (i = 0); i <= len / 2; i++)
 	{
-		str[i] = s[i];
-		puts(str);
+		temp = str[i];
+		str[i] = str[len - i - 1];
+		str[len - i - 1] = temp;
 	}
+	puts(str);
 }
