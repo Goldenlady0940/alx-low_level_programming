@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * leet - encodes a string
- * @c: encoded string
+ * leet - a function that encodes a string to 1337
+ * @c: the input string
  *
  * Return: char
  */
 
 char *leet(char *c)
 {
-	int i;
+	int i, j;
 
 	char letter[] = "aAeEoOtTlL";
 	char num[] = "4433007711";
@@ -18,8 +18,10 @@ char *leet(char *c)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			if (c[i] == letter[j]
+			if (c[i] == letter[j])
+			{
 				c[i] = num[j];
+			}
 		}
 	}
 	return (c);
