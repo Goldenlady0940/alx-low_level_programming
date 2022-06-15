@@ -2,7 +2,7 @@
 
 /**
  * cap_string - capitalize all string
- * @c: strign to be capitalized
+ * @c: string to be capitalized
  * 
  * Return: char
  */
@@ -15,10 +15,8 @@ char *cap_string(char *c)
 	{
 		if (c[i] == " ")
 		{
-			if (c[i + 1] >= 'a' && c[i + 1 <= 'z')
-			{
+			if (c[i + 1] >= 'a' && c[i + 1] <= 'z')
 				c[i] -= 32;
-			}
 		}
 	}
 	return (c);
