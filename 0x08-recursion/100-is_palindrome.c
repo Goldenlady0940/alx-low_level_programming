@@ -9,7 +9,7 @@
 
 int ispal(char *s, int i, int j)
 {
-	if (s == j)
+	if (*s == j)
 		return 1;
 	if (s[i] != s[j])
 		return 0;
