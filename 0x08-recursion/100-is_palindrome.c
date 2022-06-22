@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * is_palindrome - checks palindrom
  * ispal - checks if equal
+ * is_palindrome - checks palindrom
  * @i: row
  * @j: column
  * @s: number to be checked
