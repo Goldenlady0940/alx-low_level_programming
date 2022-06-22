@@ -28,7 +28,7 @@ int is_palindrome(char *s)
 	n = strlen(s);
 	if (n != 0)
 	{
-		return ispal(s, 0, n - 1);
+		return (ispal(s, 0, n - 1));
 	}
 	return ('\n');
 }
