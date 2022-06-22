@@ -9,5 +9,4 @@
 
 int _sqrt_recursion(int n)
 {
-	//base case
 	if (
