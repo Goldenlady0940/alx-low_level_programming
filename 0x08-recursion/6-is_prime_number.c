@@ -1,28 +1,20 @@
-#include "main.h"
+##include "main.h"
 /**
- * _sqrt_recursion - a function that returns the square root of a number
+ * is_prime_number -  a function that checks if a number is prime
+ * isPrime - a function that actu
  *
  * @n: the passed value
- *
- * Return: if no sqrt, -1. Else the sqrt.
+ * @i: a default parameter
+ * 
+ * Return: 1 if prime, 0 if not
  */
-int sqrt(int l, int h, int n)
+int _is_prime_number(int n, int i = 2)
 {
-	int m = (l + h) / 2;
-
-	if ((m * m <= n) && ((m + 1) * (m + 1) > n))
-		return (m);
-	else if (mid * mid > n)
-		return sqrt (m + 1, h, n);
-	else
-		return sqrt (l, m - 1, n);
-}
-int _sqrt_recursion(int n)
-{
-	if (n < 0)
-		return (-1);
-	if (n == 0 || n == 1)
-		return (n);
-	return (sqrt (0, n, n));
-
+	if (n <= 2)
+                return (n == 2) ? (1) : (0);
+        if (n % i == 0)
+                return (1);
+        if (i * i > n)
+                return (0);
+        return isPrime(n, i + 1);
 }
