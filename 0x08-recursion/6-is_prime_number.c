@@ -1,4 +1,5 @@
 #include "main.h"
+#include <math.h>
 /**
  * _sqrt_recursion - a function that returns the square root of a number
  *
@@ -12,7 +13,7 @@ int sqrt(int l, int h, int n)
 
 	if ((m * m <= n) && ((m + 1) * (m + 1) > n))
 		return (m);
-	else if (mid * mid > n)
+	else if (m * m > n)
 		return sqrt (m + 1, h, n);
 	else
 		return sqrt (l, m - 1, n);
