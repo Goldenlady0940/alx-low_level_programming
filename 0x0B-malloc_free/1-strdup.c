@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * _strdup - holds pointer pointing to a memory having copy of the parameter
@@ -10,7 +11,7 @@
 char *_strdup(char *str)
 {
 	char *p;
-	int i;
+	unsigned int i;
 
 	if (str == NULL)
 		return (NULL);
