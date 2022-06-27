@@ -6,7 +6,7 @@
  * _strdup - holds pointer pointing to a memory having copy of the parameter
  * @str: the strint parameter
  *
- * Returns: char pointer
+ * Return: char pointer
  */
 char *_strdup(char *str)
 {
@@ -18,7 +18,7 @@ char *_strdup(char *str)
 	p = malloc(sizeof(str));
 	if (p == NULL)
 		return (NULL);
-	for (i = 0; i < strlen(str); i++)
+	for (i = 0; i < strlen(p); i++)
 		p[i] = str[i];
 	return (p);
 }
