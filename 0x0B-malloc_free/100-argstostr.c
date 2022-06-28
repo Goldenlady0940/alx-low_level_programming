@@ -23,9 +23,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	for (i = 1; i < ac; i++)
 		strcat(arg, av[i]);
-	if (arg = NULL)
-	{
+	if (arg == NULL)
 		return (NULL);
-	}
 	return (arg);
 }
