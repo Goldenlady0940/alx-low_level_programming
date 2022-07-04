@@ -1,11 +1,12 @@
 #include "dog.h"
+#include <stdio.h>
 
 /**
  * init_dog - intializes a variable type dog
- * @d: struct var type dog
+ * @d: pointer struct var type dog
  * @name: name to be initialized
- * @age: age 
- * @owner: owner
+ * @age: age of dog
+ * @owner: owner of dog
  * 
  * Return: void
  */
