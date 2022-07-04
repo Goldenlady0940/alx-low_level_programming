@@ -1,1 +1,1 @@
-struct and typedef of c programming
+This is an ALX school project on structures and typedef.
