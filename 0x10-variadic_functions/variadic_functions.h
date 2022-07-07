@@ -1,6 +1,9 @@
 #ifndef VARIADIC_FUNCTIONS
 #define VARIADIC_FUNCTIONS
 
+#include <stdlib.h>
+#include <stdarg.h>
+
 /**
  * struct id_fun - identifier for a print function
  * @id: character used to identify correct function
