@@ -9,6 +9,7 @@
  * @id: character used to identify correct function
  * @f: corresponding function
  */
+
 typedef struct id_fun
 {
 	char *id;
