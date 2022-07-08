@@ -8,6 +8,8 @@ void _printchar(va_list list)
 {
 	printf("%c", va_arg(list, int));
 }
+
+
 /**
  * _printint - prints an int
  * @list: list to print from
@@ -16,6 +18,8 @@ void _printint(va_list list)
 {
 	printf("%d", va_arg(list, int));
 }
+
+
 /**
  * _printfloat - prints a float
  * @list: list to print from
@@ -24,14 +28,9 @@ void _printfloat(va_list list)
 {
 	printf("%f", va_arg(list, double));
 }
-/**
- * _printfloat - prints a float
- * @list: list to print from
- */
-void _printfloat(va_list list)
-{
-	printf("%f", va_arg(list, double));
-}
+
+
+
 /**
  * _printstring - prints a string
  * @list: list to print from
@@ -40,13 +39,15 @@ void _printstring(va_list list)
 {
 	char *ptr = va_arg(list, char *);
 
-        if (ptr == NULL)
+	if (ptr == NULL)
 	{
 		printf("(nil)");
 		return;
 	}
 	printf("%s", ptr);
 }
+
+
 /**
  * print_all - prints anything
  * @format: list of all types of arguments passed to the function
