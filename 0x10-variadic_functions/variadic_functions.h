@@ -14,7 +14,7 @@ typedef struct id_fun
 {
 	char *id;
 	void (*f)(va_list);
-}print_id;
+} print_id;
 
 int _putchar(char *c);
 int sum_them_all(const unsigned int n, ...);
