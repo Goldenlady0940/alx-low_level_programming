@@ -8,7 +8,6 @@
  * @len: length of string
  * @next: next value
  */
-
 typedef struct node
 {
 	char *str;
