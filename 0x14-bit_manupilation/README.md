@@ -1,1 +1,1 @@
-bit manupilation
+Not empty
