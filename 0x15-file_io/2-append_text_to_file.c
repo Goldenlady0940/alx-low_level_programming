@@ -1,39 +1,39 @@
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
+#include "main.h"
 
-#include <unistd.h>
-#include <stdlib.h>
-#include "holberton.h"
 /**
- * append_text_to_file - Appends text at the end of a file.
- * standard output.
- * @filename: Name of the file to append.
- * @text_content: NULL terminated string to write to the file.
- * Return: 1 on success, -1 on failure.
+ * append_text_to_file - appends text at the end of a file
+ * @filename: filename.
+ * @text_content: added content.
+ *
+ * Return: 1 if the file exists. -1 if the fails does not exist
+ * or if it fails.
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int fd, writeText, length;
+	int fd;
+	int nletters;
+	int rwr;
 
-	if (filename == NULL)
+	if (!filename)
 		return (-1);
-	if (text_content != NULL)
+
+	fd = open(filename, O_WRONLY | O_APPEND);
+
+	if (fd == -1)
+		return (-1);
+
+	if (text_content)
 	{
-		fd = open(filename, O_WRONLY | O_APPEND);
-		if (fd == -1)
+		for (nletters = 0; text_content[nletters]; nletters++)
+			;
+
+		rwr = write(fd, text_content, nletters);
+
+		if (rwr == -1)
 			return (-1);
-		length = 0;
-		while (*(text_content + length) != '\0')
-			length++;
-		writeText = write(fd, text_content, length);
-		if (writeText == -1)
-		{
-			close(fd);
-			write(STDOUT_FILENO, "fails", 5);
-			return (-1);
-		}
 	}
+
 	close(fd);
+
 	return (1);
 }
