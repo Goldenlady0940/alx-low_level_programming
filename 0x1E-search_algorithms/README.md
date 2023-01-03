@@ -1,1 +1,5 @@
-Just a readme on the master
+# 0x1E - C - Search Algorithms
+
+ ## Search Algortihms in this repo
+  * Linear search
+  * Binary search
